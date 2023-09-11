@@ -1,0 +1,93 @@
+[
+    {
+      "cover_img": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
+      "author_name": "John Doe",
+      "auth_img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      "published_date": "4 March",
+      "blog_title": "Exploring the Great Outdoors",
+      "hashtags": ["nature", "adventure", "travel"],
+      "reading_time": 8
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1547592180-85f173990554",
+      "author_name": "Jane Smith",
+      "auth_img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+      "published_date": "3 March",
+      "blog_title": "The Art of Cooking",
+      "hashtags": ["food", "recipes", "cooking"],
+      "reading_time": 6
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+      "author_name": "Alex Johnson",
+      "auth_img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      "published_date": "2 March",
+      "blog_title": "Tech Trends in 2023",
+      "hashtags": ["technology", "innovation", "gadgets"],
+      "reading_time": 10
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1483985988355-763728e1935b",
+      "author_name": "Emily Wilson",
+      "auth_img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      "published_date": "1 March",
+      "blog_title": "Fashion Forward: Spring Collection",
+      "hashtags": ["fashion", "style", "trends"],
+      "reading_time": 5
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c",
+      "author_name": "Michael Brown",
+      "auth_img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "published_date": "28 February",
+      "blog_title": "Healthy Living: Tips for a Better You",
+      "hashtags": ["health", "wellness", "fitness"],
+      "reading_time": 7
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b",
+      "author_name": "Sara Davis",
+      "auth_img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+      "published_date": "27 February",
+      "blog_title": "Exploring Hidden Gems: Travel Adventures",
+      "hashtags": ["travel", "adventure", "explore"],
+      "reading_time": 9
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1558427400-bc691467a8a9",
+      "author_name": "Michael Brown",
+      "auth_img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "published_date": "26 February",
+      "blog_title": "The Science Behind Dreams",
+      "hashtags": ["science", "psychology", "dreams"],
+      "reading_time": 8
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1587314168485-3236d6710814",
+      "author_name": "Emily Wilson",
+      "auth_img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      "published_date": "25 February",
+      "blog_title": "Delicious Dessert Recipes",
+      "hashtags": ["food", "desserts", "recipes"],
+      "reading_time": 7
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a",
+      "author_name": "Daniel Clark",
+      "auth_img": "https://images.unsplash.com/photo-1542132583-3599b0b5c1cf",
+      "published_date": "24 February",
+      "blog_title": "The Future of Artificial Intelligence",
+      "hashtags": ["AI", "technology", "future"],
+      "reading_time": 12
+    },
+    {
+      "cover_img": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e",
+      "author_name": "Sophia Lee",
+      "auth_img": "https://images.unsplash.com/photo-1595784279873-62b38b5e7cd6",
+      "published_date": "23 February",
+      "blog_title": "Photography Tips for Beginners",
+      "hashtags": ["photography", "tips", "beginners"],
+      "reading_time": 6
+    }
+  ]
+  
