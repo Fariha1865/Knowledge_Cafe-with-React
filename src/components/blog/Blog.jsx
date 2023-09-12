@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
-
+import { addItemToStorage } from '../../Storage';
 const Blog = ({ blog }) => {
+
+    function addToBookmarkList(blog_title){
+
+           addItemToStorage(blog_title);
+             
+    }
+
+
     return (
         <div className="card card-compact bg-base-100 shadow-xl p-5">
             <img src={blog.cover_img} alt="blogPic" className='h-48 rounded-md' />
@@ -15,7 +23,7 @@ const Blog = ({ blog }) => {
                     </div>
                     <div className='flex gap-2 items-center'>
                         <h1 className='text-gray-500 text-sm'>{blog.reading_time} min read</h1>
-                        <i className="fa-regular fa-bookmark cursor-pointer"></i>
+                        <i onClick={()=>addToBookmarkList(blog.blog_title)} className="fa-regular fa-bookmark cursor-pointer"></i>
                     </div>
                 </div>
 
