@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types';
-import { addItemToStorage } from '../../Storage';
-const Blog = ({ blog }) => {
+// import { addItemToStorage } from '../../Storage';
+// import Bookmark from '../bookmarks/Bookmarks';
 
-    function addToBookmarkList(blog_title){
-
-           addItemToStorage(blog_title);
-             
-    }
+const Blog = ({ blog,addToBookmarkList,addToTotalTimeList}) => {
 
 
     return (
@@ -23,7 +19,7 @@ const Blog = ({ blog }) => {
                     </div>
                     <div className='flex gap-2 items-center'>
                         <h1 className='text-gray-500 text-sm'>{blog.reading_time} min read</h1>
-                        <i onClick={()=>addToBookmarkList(blog.blog_title)} className="fa-regular fa-bookmark cursor-pointer"></i>
+                        <i onClick={()=>{addToBookmarkList(blog);addToTotalTimeList(blog)}} className="fa-regular fa-bookmark cursor-pointer"></i>
                     </div>
                 </div>
 

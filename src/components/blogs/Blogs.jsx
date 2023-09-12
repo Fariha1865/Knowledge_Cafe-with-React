@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../blog/Blog";
-const Blogs = () => {
+const Blogs = ({addToBookmarkList,addToTotalTimeList}) => {
 
     const [blogs,setBlogs] = useState([]);
-
+   
     useEffect(()=>{
 
            fetch('Blogs.json')
@@ -16,7 +16,7 @@ const Blogs = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-7">
             {
-                blogs.map((item,index)=><Blog key={index} blog={item}></Blog>)
+                blogs.map((item,index)=><Blog key={index} blog={item} addToBookmarkList={addToBookmarkList} addToTotalTimeList={addToTotalTimeList}></Blog>)
             }
             </div>
 
