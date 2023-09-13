@@ -19,7 +19,7 @@ const Blog = ({ blog,addToBookmarkList,addToTotalTimeList}) => {
                     </div>
                     <div className='flex gap-2 items-center'>
                         <h1 className='text-gray-500 text-sm'>{blog.reading_time} min read</h1>
-                        <i onClick={()=>{addToBookmarkList(blog);addToTotalTimeList(blog)}} className="fa-regular fa-bookmark cursor-pointer"></i>
+                        <i onClick={()=>addToBookmarkList(blog)} className="fa-regular fa-bookmark cursor-pointer"></i>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ const Blog = ({ blog,addToBookmarkList,addToTotalTimeList}) => {
                {blog.hashtags.map((item,index)=><p key={index} >#{item}</p>)}
                </div>
 
-                <a href="#" className='underline text-blue-900 font-bold'>Mark As Read</a>
+                <a onClick={()=>addToTotalTimeList(blog.reading_time,blog)} href="#" className='underline text-blue-900 font-bold'>Mark As Read</a>
             </div>
         </div>
     );

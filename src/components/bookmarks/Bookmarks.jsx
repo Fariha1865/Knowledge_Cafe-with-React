@@ -10,7 +10,7 @@ const Bookmark = ({ bookmarks }) => {
         if (newBookMarks) {
             setBookmarks(newBookMarks);
         }
-        console.log(JSON.parse(localStorage.getItem('bookMarks')))
+        
 
     }, [bookmarks])
     return (

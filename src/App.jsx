@@ -4,7 +4,7 @@ import Navbar from './components/navbar/navbar'
 import Blogs from './components/blogs/blogs'
 import Bookmark from './components/bookmarks/Bookmarks'
 import ReadingTime from './components/readingTime/ReadingTime'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { addItemToStorage } from './Storage'
 
 
@@ -13,7 +13,18 @@ import { addItemToStorage } from './Storage'
 function App() {
 
   const [bookmarks, setBookmarks] = useState([]);
+  const [timeSum,setTimeSum] = useState(()=>{
 
+ 
+    if (JSON.parse(localStorage.getItem('Time'))) {
+      return JSON.parse(localStorage.getItem('Time'));
+      
+    } else {
+      return 0;
+    }
+  });
+
+  
   function addToBookmarkList(blog) {
 
     addItemToStorage(blog);
@@ -23,26 +34,23 @@ function App() {
     }
   }
 
-  let sum;
-  if (JSON.parse(localStorage.getItem('Time'))) {
-    sum = JSON.parse(localStorage.getItem('Time'));
-  } else {
-    sum = 0;
+
+  function addToTotalTimeList(time,blog) {
+
+    
+   
+      setTimeSum(timeSum+time)
+      //  let removedBookmark = [...bookmarks];
+      //  removedBookmark = removedBookmark.filter(item=>item != blog);
+      //  setBookmarks(removedBookmark)
+      //  localStorage.setItem('bookMarks',JSON.stringify(removedBookmark))
+      
   }
 
-  function addToTotalTimeList(blog) {
+  useEffect(()=>{
 
-    console.log(sum)
-    if (sum || sum === 0) {
-      sum = sum + blog.reading_time;
-      localStorage.setItem('Time', sum);
-      console.log(sum);
-    }
-
-
-
-
-  }
+    localStorage.setItem('Time', timeSum);
+  },[timeSum])
   return (
     <>
 
@@ -51,7 +59,7 @@ function App() {
         <Blogs addToBookmarkList={addToBookmarkList} addToTotalTimeList={addToTotalTimeList}></Blogs>
         <div>
           <div className='flex justify-center p-5 shadow-xl bg-blue-100 mb-5 rounded-md'>
-            <ReadingTime sum={sum}></ReadingTime>
+            <ReadingTime time={timeSum}></ReadingTime>
           </div>
           <div className='bg-gray-200 p-5 h-max'>
             <Bookmark bookmarks={bookmarks}></Bookmark>
